@@ -17,6 +17,8 @@ env/
 dist/
 build/
 *.exe
+# Разрешаем exe в data/ (артефакты ДЗ: скриншоты + собранное приложение)
+!data/**/*.exe
 
 # OS junk
 .DS_Store
