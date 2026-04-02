@@ -19,6 +19,12 @@ build/
 *.exe
 # Разрешаем exe в data/ (артефакты ДЗ: скриншоты + собранное приложение)
 !data/**/*.exe
+# PyInstaller: разрешаем готовый билд в desktop/dist/ (вариант для GitHub)
+# Сначала снимаем игнор с каталога dist/ внутри desktop (правило dist/ выше скрывает любой dist/)
+!desktop/dist/
+!desktop/dist/**
+# Явно снимаем *.exe для этого каталога (иначе правило *.exe остаётся сильнее)
+!desktop/dist/**/*.exe
 
 # OS junk
 .DS_Store
